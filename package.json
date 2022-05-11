@@ -1,0 +1,63 @@
+{
+  "name": "net-utils",
+  "private": true,
+  "version": "0.0.0",
+  "main": "main.js",
+  "maintainers": [
+    "Laurens Inauen"
+  ],
+  "description": "utils for common networking tasks",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "electrify": "electron main.js",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "ipaddr.js": "^2.0.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.63",
+    "@electron-forge/maker-deb": "^6.0.0-beta.63",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.63",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
+    "@electron-forge/maker-zip": "^6.0.0-beta.63",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "electron": "^18.2.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.7"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "./network.png"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-dmg",
+          "config": {
+            "icon": "./network.png"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {
+            "options": {
+              "maintainer": "Laurens Inauen"
+            },
+            "icon": "./network.png"
+          }
+        }
+      ]
+    }
+  }
+}

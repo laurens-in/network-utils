@@ -1,0 +1,66 @@
+.App {
+  text-align: left;
+  padding: 25px;
+  min-width: 200px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  font-size: 15px;
+  color: white;
+  margin: 0;
+}
+
+input {
+  background-color: transparent;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+h1 {
+  color: greenyellow;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: greenyellow;
+}
+
+.form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form > * {
+  margin-right: 10px;
+}
+
+#copied {
+  position: fixed;
+  justify-self: center;
+  border: 2px solid greenyellow;
+  color: greenyellow;
+  background-color: #282c34;
+  border-radius: 3px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 3px;
+  color: lightgray;
+}
+
+label {
+  margin-bottom: 5px;
+}
